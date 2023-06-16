@@ -65,9 +65,9 @@ namespace DockerAPIAuthentication.Controllers
             UserInfo userInfo = new UserInfo();
 
             userInfo.UserId = 12;
-            userInfo.DisplayName = "dave";
-            userInfo.UserName = "asdqwe";
-            userInfo.Email = "asd@asd.co.za";
+            userInfo.DisplayName = "carl Labuschagne";
+            userInfo.UserName = "carllabuschagne";
+            userInfo.Email = "carl@carllabuschagne.com";
 
             return userInfo;
         }

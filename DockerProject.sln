@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerAPIGateway", "DockerAPIGateway\DockerAPIGateway.csproj", "{D2A6E69C-1146-41B9-AFDD-9C28DB378983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIGateway", "DockerAPIGateway\DockerAPIGateway.csproj", "{D2A6E69C-1146-41B9-AFDD-9C28DB378983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerAPIAuthentication", "DockerAPIAuthentication\DockerAPIAuthentication.csproj", "{724B1B92-335D-4A86-AF38-045CA40D6E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIAuthentication", "DockerAPIAuthentication\DockerAPIAuthentication.csproj", "{724B1B92-335D-4A86-AF38-045CA40D6E3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerWebApplication", "DockerWebApplication\DockerWebApplication.csproj", "{627C1490-7E99-49DC-A27B-37F478D14721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWebApplication", "DockerWebApplication\DockerWebApplication.csproj", "{627C1490-7E99-49DC-A27B-37F478D14721}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{CFB76A4E-5C40-43CA-AC16-E45E66AD8BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIMembers", "DockerAPIMembers\DockerAPIMembers.csproj", "{E39DEBCA-6DAE-4CFE-81DF-AED3C56E3BCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerAPIMembers", "DockerAPIMembers\DockerAPIMembers.csproj", "{E39DEBCA-6DAE-4CFE-81DF-AED3C56E3BCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIDataAccess", "DockerAPIDataAccess\DockerAPIDataAccess.csproj", "{5CEDA239-1DF4-4714-8793-402385FA5DCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerAPIDataAccess", "DockerAPIDataAccess\DockerAPIDataAccess.csproj", "{5CEDA239-1DF4-4714-8793-402385FA5DCA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerAPIDataModels", "DockerAPIDataModels\DockerAPIDataModels.csproj", "{C7816C60-1BF6-4E6D-AEFB-26158DCA0718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIDataModels", "DockerAPIDataModels\DockerAPIDataModels.csproj", "{C7816C60-1BF6-4E6D-AEFB-26158DCA0718}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

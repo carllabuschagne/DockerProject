@@ -14,7 +14,7 @@ WORKDIR "/src/DockerAPIAuthentication"
 RUN dotnet build "DockerAPIAuthentication.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "DockerAPIAuthentication/DockerAPIAuthentication.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "DockerAPIAuthentication.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
