@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIDataAccess", "Dock
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerAPIDataModels", "DockerAPIDataModels\DockerAPIDataModels.csproj", "{C7816C60-1BF6-4E6D-AEFB-26158DCA0718}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerAPIRabbitMQ", "DockerAPIRabbitMQ\DockerAPIRabbitMQ.csproj", "{1831C1F5-8EA7-4A7F-8966-9CDD1035BB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerConsoleRabbitMQ", "DockerConsoleRabbitMQ\DockerConsoleRabbitMQ.csproj", "{DAB5CBC6-413E-4EFC-9E60-425DBD35BF59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{C7816C60-1BF6-4E6D-AEFB-26158DCA0718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7816C60-1BF6-4E6D-AEFB-26158DCA0718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7816C60-1BF6-4E6D-AEFB-26158DCA0718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1831C1F5-8EA7-4A7F-8966-9CDD1035BB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1831C1F5-8EA7-4A7F-8966-9CDD1035BB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1831C1F5-8EA7-4A7F-8966-9CDD1035BB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1831C1F5-8EA7-4A7F-8966-9CDD1035BB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB5CBC6-413E-4EFC-9E60-425DBD35BF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB5CBC6-413E-4EFC-9E60-425DBD35BF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB5CBC6-413E-4EFC-9E60-425DBD35BF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB5CBC6-413E-4EFC-9E60-425DBD35BF59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
