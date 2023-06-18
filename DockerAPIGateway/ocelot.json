@@ -14,6 +14,18 @@
           "Port": 32786
         }
       ]
+    },
+    {
+      "UpstreamPathTemplate": "/member",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/member/member",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 32774
+        }
+      ]
     }
   ]
 }

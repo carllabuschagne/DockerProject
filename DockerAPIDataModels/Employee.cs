@@ -1,4 +1,5 @@
-﻿namespace DockerAPIDataModels
+﻿
+namespace DockerAPIDataModels
 {
     public class Employee
     {
@@ -15,5 +16,8 @@
         public short SickLeaveHours { get; set; }
         public Guid? RowGuid { get; set; }
         public DateTime ModifiedDate { get; set; }
+
+
     }
+
 }

@@ -33,9 +33,9 @@ namespace DockerAPIAuthentication.Controllers
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                         new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
                         new Claim("UserId", user.UserId.ToString()),
-                        new Claim("DisplayName", user.DisplayName),
-                        new Claim("UserName", user.UserName),
-                        new Claim("Email", user.Email)
+                        new Claim("Email", user.Email),
+                        new Claim("AccessRole", user.AccessRole),
+                        new Claim("TenantId", Guid.NewGuid().ToString())
                     };
 
                     var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
@@ -65,8 +65,7 @@ namespace DockerAPIAuthentication.Controllers
             UserInfo userInfo = new UserInfo();
 
             userInfo.UserId = 12;
-            userInfo.DisplayName = "carl Labuschagne";
-            userInfo.UserName = "carllabuschagne";
+            userInfo.AccessRole = "Admin";
             userInfo.Email = "carl@carllabuschagne.com";
 
             return userInfo;

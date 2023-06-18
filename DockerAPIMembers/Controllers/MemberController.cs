@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using Microsoft.Data.SqlClient;
 using System.Text;
+using Dapper;
 
 namespace DockerAPIMembers.Controllers
 {
@@ -29,14 +31,23 @@ namespace DockerAPIMembers.Controllers
 
             JwtSecurityToken JwtSecurityToken = new JwtSecurityToken(jwtEncodedString: tokenString);
             //string expiry = token.Claims.First(c => c.Type == "expiry").Value;
-            
-            Employee employee = new Employee();
-            employee.SickLeaveHours = 1200;
-            employee.BirthDate = DateTime.Now.AddDays(-12345);
-            employee.EmployeeID = 12;
-            employee.EmployeeName = "David Hasselhoff";
 
-            return Ok(employee);
+
+            List<Employee> Employees = new List<Employee>();
+
+
+            string constring = @"Server=localhost\SQLEXPRESS;Database=testdb;Trusted_Connection=True;";
+
+            var sql = "select * from products";
+            using (var connection = new SqlConnection(constring))
+            {
+                connection.Open();
+                Employees = connection.Query<Employee>(sql).ToList();
+            }
+
+
+
+            return Ok(Employees);
         }
     }
 
