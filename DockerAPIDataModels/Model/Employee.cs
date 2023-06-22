@@ -1,5 +1,5 @@
 ﻿
-namespace DockerAPIDataModels
+namespace DockerAPIDataModels.Model
 {
     public class Employee
     {

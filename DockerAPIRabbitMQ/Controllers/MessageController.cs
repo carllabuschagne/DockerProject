@@ -1,4 +1,4 @@
-using DockerAPIDataModels;
+using DockerAPIDataModels.Model;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -55,9 +55,6 @@ namespace DockerAPIMembers.Controllers
 
             return Ok();
         }
-
-
-
     }
 
 

@@ -1,4 +1,4 @@
-﻿namespace DockerAPIDataModels
+﻿namespace DockerAPIDataModels.Model
 {
     public class UserInfo
     {
