@@ -25,8 +25,7 @@ namespace DockerAPICRUD.Controllers
             connection = new NpgsqlConnection(this.Configuration.GetConnectionString("postgres"));
             connection.Open();
 
-
-            string commandText = $"SELECT * FROM Animals";
+            string commandText = "SELECT * FROM Animals";
             using (NpgsqlCommand cmd = new NpgsqlCommand(commandText, connection))
             {
                 using (NpgsqlDataReader reader = cmd.ExecuteReader())
@@ -35,14 +34,9 @@ namespace DockerAPICRUD.Controllers
                        
                     }
             }
-            return null;
-
-
 
             //Populate Repo from Repo
             _animalRepository = new AnimalRepository();
-
-
 
             connection.Close();
         }
