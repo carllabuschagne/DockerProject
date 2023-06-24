@@ -1,4 +1,5 @@
-﻿using DockerAPIDataModels.Interface;
+﻿using Dapper;
+using DockerAPIDataModels.Interface;
 using DockerAPIDataModels.Model;
 using DockerAPIDataModels.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -20,23 +21,29 @@ namespace DockerAPICRUD.Controllers
         //Constructor
         public AnimalsController(IConfiguration _configuration)
         {
+            //Populate Repo from Repo
+            _animalRepository = new AnimalRepository();
+
             Configuration = _configuration;
 
             connection = new NpgsqlConnection(this.Configuration.GetConnectionString("postgres"));
             connection.Open();
 
             string commandText = "SELECT * FROM Animals";
-            using (NpgsqlCommand cmd = new NpgsqlCommand(commandText, connection))
-            {
-                using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                    while (reader.Read())
-                    {
-                       
-                    }
-            }
 
-            //Populate Repo from Repo
-            _animalRepository = new AnimalRepository();
+            var animals = connection.QueryAsync<Animal>(commandText);
+
+            //_animalRepository.Animals = animals;
+
+            //using (NpgsqlCommand cmd = new NpgsqlCommand(commandText, connection))
+            //{
+            //    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+            //        while (reader.Read())
+            //        {
+
+            //        }
+            //}
+
 
             connection.Close();
         }
