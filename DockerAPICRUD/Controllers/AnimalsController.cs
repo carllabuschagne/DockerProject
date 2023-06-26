@@ -26,7 +26,7 @@ namespace DockerAPICRUD.Controllers
 
             Configuration = _configuration;
 
-            connection = new NpgsqlConnection(this.Configuration.GetConnectionString("postgres"));
+            connection = new NpgsqlConnection(this.Configuration.GetConnectionString("postgresUbuntu"));
             connection.Open();
 
             string commandText = "SELECT * FROM Animals";
