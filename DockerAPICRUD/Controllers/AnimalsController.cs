@@ -44,7 +44,6 @@ namespace DockerAPICRUD.Controllers
             //        }
             //}
 
-
             connection.Close();
         }
 
